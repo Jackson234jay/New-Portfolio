@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import hero from "../freepik__surreal-and-dreamlike-saturated-pastel-dreamy-atmo__97483.jpeg";
 const Hero = () => {
   return (
@@ -21,7 +22,9 @@ const Hero = () => {
               functional, and engaging experiences for the web. Let's bring
               ideas to life together.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <Link to="contact" smooth={true}>
+              <button className="btn btn-primary">Get Started</button>
+            </Link>
           </div>
         </div>
       </div>

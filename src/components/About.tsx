@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
@@ -41,7 +42,9 @@ const About = () => {
       </p>
 
       {/* Call To Action Button */}
-      <button className="btn btn-primary">Let's Connect</button>
+      <Link to="contact" smooth={true}>
+        <button className="btn btn-primary">Let's Connect</button>
+      </Link>
     </section>
   );
 };
