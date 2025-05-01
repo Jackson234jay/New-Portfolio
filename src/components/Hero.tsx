@@ -3,7 +3,7 @@ import hero from "../freepik__surreal-and-dreamlike-saturated-pastel-dreamy-atmo
 const Hero = () => {
   return (
     <div>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse gap-10">
           <img
             src={hero}

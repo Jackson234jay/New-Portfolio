@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center items-center px-4"
+      className="min-h-screen flex flex-col bg-base-200 justify-center items-center px-4"
     >
       {/* Small Static Heading */}
       <h2 className="text-primary text-sm tracking-widest uppercase mb-2">
