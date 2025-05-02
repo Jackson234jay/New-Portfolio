@@ -2,8 +2,10 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Lightning from "./components/Lightning";
+import { Glow, GlowCapture } from "@codaworks/react-glow";
 import Navbar from "./components/Navbar/Navbar";
 import Skills from "./components/Skills";
+import AudioPlayer from "./components/AudioPlayer";
 
 const App = () => {
   return (
@@ -16,10 +18,13 @@ const App = () => {
       {/* Main content */}
       <div className="relative z-10">
         <Navbar />
+        <AudioPlayer />
         <Hero />
         <About />
         <Skills />
-        <Contact />
+        <GlowCapture>
+          <Contact />
+        </GlowCapture>
       </div>
     </div>
   );

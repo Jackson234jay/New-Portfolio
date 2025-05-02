@@ -11,7 +11,7 @@ const Contact = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="backdrop-blur-md  bg-white/10 p-8 rounded-2xl shadow-xl border border-white/10 max-w-2xl mx-auto space-y-6"
+        className="backdrop-blur-md   bg-white/10 p-8 rounded-2xl shadow-xl border border-white/10 max-w-2xl mx-auto space-y-6"
       >
         <AnimatePresence>
           {alert.message && (
