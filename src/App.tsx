@@ -2,7 +2,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Lightning from "./components/Lightning";
-import { Glow, GlowCapture } from "@codaworks/react-glow";
+import { GlowCapture } from "@codaworks/react-glow";
 import Navbar from "./components/Navbar/Navbar";
 import Skills from "./components/Skills";
 import AudioPlayer from "./components/AudioPlayer";
