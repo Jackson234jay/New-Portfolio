@@ -1,13 +1,13 @@
 import { Link } from "react-scroll";
-import hero from "../freepik__surreal-and-dreamlike-saturated-pastel-dreamy-atmo__97483.webp";
 const Hero = () => {
   return (
     <div>
       <div className="hero min-h-screen w-full overflow-hidden">
         <div className="hero-content flex-col lg:flex-row-reverse gap-6 px-4 sm:px-6 md:px-10">
           <img
-            src={hero}
+            src={"/hero.wepb"}
             alt="profile"
+            loading="eager"
             className="w-full md:max-w-sm lg:max-w-sm rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 hover:animate-pulse"
           />
 
