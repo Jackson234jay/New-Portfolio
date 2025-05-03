@@ -7,6 +7,8 @@ const Hero = () => {
           <img
             src={"/hero.wepb"}
             alt="profile"
+            width={"400"}
+            height={"400"}
             loading="eager"
             className="w-full md:max-w-sm lg:max-w-sm rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 hover:animate-pulse"
           />
