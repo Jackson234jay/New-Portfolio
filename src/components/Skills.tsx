@@ -117,7 +117,10 @@ const Skills = () => {
       </h1>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mx-4">
         {skillsData.map((skill, index) => (
-          <div key={index} className="card w-96 bg-base-100 shadow-sm">
+          <div
+            key={index}
+            className="card w-full sm:w-80 md:w-96 bg-base-100 shadow-sm"
+          >
             <div className="card-body">
               <span className="flex items-center gap-2">
                 {skill.img}
