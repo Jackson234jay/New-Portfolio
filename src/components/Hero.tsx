@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import hero from "../freepik__surreal-and-dreamlike-saturated-pastel-dreamy-atmo__97483.jpeg";
+import hero from "../freepik__surreal-and-dreamlike-saturated-pastel-dreamy-atmo__97483.webp";
 const Hero = () => {
   return (
     <div>
