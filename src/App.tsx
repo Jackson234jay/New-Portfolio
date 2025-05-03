@@ -10,7 +10,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
-    <div className="relative bg-base-200 overflow-hidden">
+    <div id="home" className="relative bg-base-200 overflow-hidden">
       {/* Lightning background layer */}
       <div className="absolute inset-0 z-0">
         <Lightning />

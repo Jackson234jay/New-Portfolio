@@ -45,7 +45,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">CodeAura</a>
+          <Link to="home" smooth={true}>
+            <a className="btn btn-ghost normal-case text-xl">CodeAura</a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
