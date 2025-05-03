@@ -6,6 +6,7 @@ import { GlowCapture } from "@codaworks/react-glow";
 import Navbar from "./components/Navbar/Navbar";
 import Skills from "./components/Skills";
 import AudioPlayer from "./components/AudioPlayer";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       {/* Lightning background layer */}
       <div className="absolute inset-0 z-0">
         <Lightning />
+        <Analytics />
       </div>
 
       {/* Main content */}
