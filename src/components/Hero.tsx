@@ -5,7 +5,7 @@ const Hero = () => {
       <div className="hero min-h-screen w-full overflow-hidden">
         <div className="hero-content flex-col lg:flex-row-reverse gap-6 px-4 sm:px-6 md:px-10">
           <img
-            src="public/images/hero.webp"
+            src="/images/hero.webp"
             alt="profile"
             width={"400"}
             height={"400"}
