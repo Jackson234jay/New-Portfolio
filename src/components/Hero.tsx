@@ -5,10 +5,10 @@ const Hero = () => {
       <div className="hero min-h-screen w-full overflow-hidden">
         <div className="hero-content flex-col lg:flex-row-reverse gap-6 px-4 sm:px-6 md:px-10">
           <img
-            src="/images/hero_400.webp"
+            src="/images/hero_400px.webp"
             srcSet="
-    /images/hero_200.webp 200w,
-    /images/hero_400.webp 400w
+    /images/hero_200px.webp 200w,
+    /images/hero_400px.webp 400w
   "
             sizes="(max-width: 768px) 200px, 400px"
             alt="profile"
