@@ -5,12 +5,17 @@ const Hero = () => {
       <div className="hero min-h-screen w-full overflow-hidden">
         <div className="hero-content flex-col lg:flex-row-reverse gap-6 px-4 sm:px-6 md:px-10">
           <img
-            src="/images/hero.webp"
+            src="/images/hero-400.webp"
+            srcSet="
+    /images/hero-200.webp 200w,
+    /images/hero-400.webp 400w
+  "
+            sizes="(max-width: 768px) 200px, 400px"
             alt="profile"
-            width={"400"}
-            height={"400"}
-            loading="eager"
-            className="w-full md:max-w-sm lg:max-w-sm rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 hover:animate-pulse"
+            width="400"
+            height="400"
+            loading="lazy"
+            className="w-full md:max-w-sm lg:max-w-sm rounded-full shadow-2xl hover:scale-105 transition"
           />
 
           <div>
