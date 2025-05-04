@@ -14,7 +14,7 @@ const Hero = () => {
             alt="profile"
             width="400"
             height="400"
-            loading="lazy"
+            loading="eager"
             className="w-full md:max-w-sm lg:max-w-sm rounded-full shadow-2xl hover:scale-105 transition"
           />
 
