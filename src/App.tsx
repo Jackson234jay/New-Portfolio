@@ -1,5 +1,4 @@
 import { Suspense, lazy } from "react";
-import { GlowCapture } from "@codaworks/react-glow";
 import Navbar from "./components/Navbar/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -30,9 +29,7 @@ const App = () => {
           <Hero />
           <About />
           <Skills />
-          <GlowCapture>
-            <Contact />
-          </GlowCapture>
+          <Contact />
         </Suspense>
       </div>
     </div>
