@@ -1,32 +1,39 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Lightning from "./components/Lightning";
+import { Suspense, lazy } from "react";
 import { GlowCapture } from "@codaworks/react-glow";
 import Navbar from "./components/Navbar/Navbar";
-import Skills from "./components/Skills";
-import AudioPlayer from "./components/AudioPlayer";
 import { Analytics } from "@vercel/analytics/react";
+
+// Lazily import heavy or below-the-fold components
+const Hero = lazy(() => import("./components/Hero"));
+const About = lazy(() => import("./components/About"));
+const Skills = lazy(() => import("./components/Skills"));
+const Contact = lazy(() => import("./components/Contact"));
+const Lightning = lazy(() => import("./components/Lightning"));
+const AudioPlayer = lazy(() => import("./components/AudioPlayer"));
 
 const App = () => {
   return (
     <div id="home" className="relative bg-base-200 overflow-hidden">
-      {/* Lightning background layer */}
+      {/* Background lightning layer */}
       <div className="absolute inset-0 z-0">
-        <Lightning />
+        <Suspense fallback={null}>
+          <Lightning />
+        </Suspense>
         <Analytics />
       </div>
 
       {/* Main content */}
       <div className="relative z-10">
         <Navbar />
-        <AudioPlayer />
-        <Hero />
-        <About />
-        <Skills />
-        <GlowCapture>
-          <Contact />
-        </GlowCapture>
+        <Suspense fallback={null}>
+          <AudioPlayer />
+          <Hero />
+          <About />
+          <Skills />
+          <GlowCapture>
+            <Contact />
+          </GlowCapture>
+        </Suspense>
       </div>
     </div>
   );
